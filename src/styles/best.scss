@@ -1,0 +1,19 @@
+.best {
+    padding-bottom: 30px;
+    background: url('../assets/img/MaskGroup.jpg') center center / cover no-repeat;
+    width: 100%;
+    min-height: 509px  ;
+    &-title {
+        text-align: center;
+        font-size: 24px;
+        padding-top: 80px;
+        margin-bottom: 40px;
+    }
+    &-cards {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        column-gap: 70px;
+    }
+}
