@@ -14,6 +14,10 @@
             object-fit: cover;
         }
     }
+    &:hover {
+        cursor: pointer;
+        transform: scale(1.05)
+    }
     &-text {
         text-align: center;
         margin-top: 14px;
@@ -22,5 +26,9 @@
         text-align: right;
         font-weight: 700;
         margin-top: 10px;
+    }
+    &-country {
+        margin-top: 14px;
+        text-align: right;
     }
 }

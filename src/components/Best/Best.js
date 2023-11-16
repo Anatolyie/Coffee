@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Card from './Card/Card';
+import Card from '../Card/Card';
 
 function Best({ products }) {
     return (
@@ -11,14 +11,14 @@ function Best({ products }) {
                     products.map((product, index) => (
                         <Card 
                             key={index}
+                            img={product.img}
                             text={product.name}
-                            price={product.price} 
-                            img={product.img}   
+                            price={product.price}
                         />
                     ))
                 }
             </div>
-        </section>
+        </section> 
     );
 }
 

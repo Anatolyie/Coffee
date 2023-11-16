@@ -7,7 +7,6 @@ function About({ title, text }) {
         <section className='about'>
             <h2 className='about-title'>{title}</h2>
             <div className="about-img">
-                {/* <img src={imgS} alt="coffee-img" /> */}
                 <MySvgDoubleCoffe2/>
             </div>
             <div className="about-descr">{text}</div>

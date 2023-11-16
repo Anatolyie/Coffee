@@ -1,0 +1,20 @@
+[
+    { "img": "./img/presto-min.png", "name": "Solimo Coffee Beans 2 kg", "price": 10.73, "country": "Brazil" },
+    { "img": "img/presto-min.png", "name": "Presto Coffee Beans 1 kg", "price": 19.33, "country": "Brazil" },
+    { "img": "../assets/img/presto-min.png", "name": "AROMISTICO Coffee 1 kg", "price": 7.99, "country": "Columbia" },
+    { "img": "./img/presto-min.png", "name": "Solimo Coffee Beans 2 kg", "price": 10.73, "country": "Kenya" },
+    { "img": "img/presto-min.png", "name": "Presto Coffee Beans 1 kg", "price": 19.33, "country": "Brazil" },
+    { "img": "../assets/img/presto-min.png", "name": "AROMISTICO Coffee 1 kg", "price": 7.99, "country": "Columbia" },
+    { "img": "./img/presto-min.png", "name": "Solimo Coffee Beans 2 kg", "price": 10.73, "country": "Kenya" },
+    { "img": "img/presto-min.png", "name": "Presto Coffee Beans 1 kg", "price": 19.33, "country": "Kenya" },
+    { "img": "../assets/img/presto-min.png", "name": "AROMISTICO Coffee 1 kg", "price": 7.99, "country": "Columbia" },
+    { "img": "./img/presto-min.png", "name": "Solimo Coffee Beans 2 kg", "price": 10.73, "country": "Columbia" },
+    { "img": "img/presto-min.png", "name": "Presto Coffee Beans 1 kg", "price": 19.33, "country": "Columbia" },
+    { "img": "../assets/img/presto-min.png", "name": "AROMISTICO Coffee 1 kg", "price": 7.99, "country": "Brazil" },
+    { "img": "./img/presto-min.png", "name": "Solimo Coffee Beans 2 kg", "price": 10.73, "country": "Kenya" },
+    { "img": "img/presto-min.png", "name": "Presto Coffee Beans 1 kg", "price": 19.33, "country": "Brazil" },
+    { "img": "../assets/img/presto-min.png", "name": "AROMISTICO Coffee 1 kg", "price": 7.99, "country": "Brazil" },
+    { "img": "./img/presto-min.png", "name": "Solimo Coffee Beans 2 kg", "price": 10.73, "country": "Columbia" },
+    { "img": "img/presto-min.png", "name": "Presto Coffee Beans 1 kg", "price": 19.33, "country": "Brazil" },
+    { "img": "../assets/img/presto-min.png", "name": "AROMISTICO Coffee 1 kg", "price": 7.99, "country": "Kenya" }
+]

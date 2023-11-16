@@ -1,0 +1,11 @@
+.buy {
+    width: 800px;
+    margin: 0 auto;
+    &-cards {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        column-gap: 70px;
+    }
+}

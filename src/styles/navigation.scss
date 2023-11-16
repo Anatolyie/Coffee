@@ -3,5 +3,10 @@
         display: flex;
         column-gap: 35px;
         align-items: center;
+        &__link {
+            &:hover {
+                color: #e49090;
+            }
+        }
     }
 }

@@ -1,0 +1,42 @@
+.filter {
+    display: flex;
+    justify-content: center;
+    column-gap: 50px;
+    margin-bottom: 70px;
+    align-items: center;
+    &-input {
+        input {
+            width: 180px;
+            height: 30px;
+            border-radius: 4px;
+            background: #FFF;
+            box-shadow: 4px 4px 20px 0px rgba(0, 0, 0, 0.25);
+            border: 1px solid rgba(0, 0, 0, 0.25);
+            padding: 5px 10px;
+            &::placeholder {
+                color: rgba(0, 0, 0, 0.50);
+                font-size: 12px;
+                font-family: Merienda;
+            }
+        }
+    }
+    &-btn {
+        &__country {
+            width: 75px;
+            height: 30px;
+            border-radius: 4px 0px 0px 4px;
+            background: #FFF;
+            box-shadow: 4px 4px 20px 0px rgba(0, 0, 0, 0.25);
+            border: none;
+            cursor: pointer;
+            font-size: 12px;
+            font-family: Merienda;
+        }
+    }
+}
+
+label {
+    display: flex;
+    column-gap: 25px;
+    align-items: center;
+}
