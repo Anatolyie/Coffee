@@ -8,16 +8,15 @@ import Pleasure from "./pages/Pleasure";
 import Footer from "./components/Footer/Footer";
 import Error from "./pages/Error";
 
-import data from './assets/data.json'
-import dataBuy from './assets/dataBuy.json'
-
+import  {data} from './assets/data'
+import {dataBuy} from './assets/data'
 
 import "./styles/index.scss"
 
 
 function App() {
-  const [ourCoffee, setOurCoffee] = useState(data);
-  const [buyCoffee, setBuyCoffee] = useState(dataBuy);
+  const [ourCoffee] = useState(data);
+  const [buyCoffee] = useState(dataBuy);
 
   const { pathname } = useLocation();
 
@@ -25,11 +24,9 @@ function App() {
     window.scrollTo(0, 0);
   }, [pathname]);
 
-
-
   return (
     <>
-       <Header/>
+      <Header/>
       <Routes>
         <Route path="/" element={<Home coffeeData={ourCoffee}/>}/>
         <Route path="/ourcoffee" element={<OurCoffee coffeeBuy={buyCoffee}/>}/>
