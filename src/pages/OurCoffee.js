@@ -15,14 +15,30 @@ function OurCoffee({ coffeeBuy }) {
       ];
 
     const [selectedCountry, setSelectedCountry] = useState(null);
+    const [searchText, setSearchText] = useState('');
+
+    // const handleCountrySelect = (country) => {
+    //     setSelectedCountry(country);
+    // };
+
+    // const filteredProducts = selectedCountry
+    //     ? coffeeBuy.filter((product) => product.country === selectedCountry)
+    //     : coffeeBuy;
 
     const handleCountrySelect = (country) => {
         setSelectedCountry(country);
     };
 
-    const filteredProducts = selectedCountry
-        ? coffeeBuy.filter((product) => product.country === selectedCountry)
-        : coffeeBuy;
+    const handleSearchTextChange = (text) => {
+        setSearchText(text);
+    };
+
+    const filteredProducts = coffeeBuy.filter((product) => {
+        const countryCondition = !selectedCountry || product.country === selectedCountry;
+        const searchCondition = product.name.toLowerCase().includes(searchText.toLowerCase());
+        return countryCondition && searchCondition;
+    });
+
 
 
     const backgroundStyles = {
@@ -41,7 +57,7 @@ function OurCoffee({ coffeeBuy }) {
                 <About title={'About our beans'} text={aboutText} lines={true}/>
             </div>
             <hr />
-            <Filter onCountrySelect={handleCountrySelect}/>
+            <Filter onCountrySelect={handleCountrySelect} onSearchTextChange={handleSearchTextChange}/>
             <Buy products={filteredProducts} />
         </>
 
