@@ -2,7 +2,8 @@ import React from 'react';
 
 import Card from '../Card/Card';
 
-function Best({ products }) {
+function Buy({ products }) {
+    
     return (
         <section className='buy'>
             <div className="buy-cards">
@@ -29,4 +30,4 @@ function Best({ products }) {
     );
 }
 
-export default Best;
+export default Buy;

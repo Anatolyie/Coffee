@@ -1,17 +1,31 @@
-import React from 'react';
+import React, { useState } from 'react';
 
-function Filter() {
+function Filter({ onCountrySelect }) {
+    const [country, SetCountry] = useState(['Brazil', 'Kenya', 'Columbia']);
+
+    const handleCountryClick = (selectedCountry) => {
+        onCountrySelect(selectedCountry);
+    };
+
     return (
         <div className='filter'> 
             <label className='filter-input'>
                 Lookiing for
-                <input type="text" placeholder='start typing here...'/>
+                <input 
+                    type="text" 
+                    placeholder='start typing here...'/>
             </label>
             <label className='filter-btn'>
                 Or filter
-                <button className="filter-btn__country">brazil</button>
-                <button className="filter-btn__country">Kenya</button>
-                <button className="filter-btn__country">Columbia</button>
+                {
+                    country.map(item => (
+                        <button 
+                            key={item} 
+                            className="filter-btn__country"
+                            onClick={() => handleCountryClick(item)}
+                            >{item}</button>
+                    ))
+                }
             </label>
         </div>
     );

@@ -1,4 +1,5 @@
 import React from 'react';
+import { useState } from 'react';
 
 import About from '../components/About/About';
 import Buy from '../components/Buy/Buy';
@@ -13,6 +14,17 @@ function OurCoffee({ coffeeBuy }) {
         "Children me laughing we prospect answered followed. At it went is song that held help face."
       ];
 
+    const [selectedCountry, setSelectedCountry] = useState(null);
+
+    const handleCountrySelect = (country) => {
+        setSelectedCountry(country);
+    };
+
+    const filteredProducts = selectedCountry
+        ? coffeeBuy.filter((product) => product.country === selectedCountry)
+        : coffeeBuy;
+
+
     const backgroundStyles = {
         background: `url(${require("../assets/img/Main-bg3.jpg")}) center center / cover no-repeat`,
     };
@@ -20,7 +32,7 @@ function OurCoffee({ coffeeBuy }) {
     return (
         <>
             <div className='promo promo-ourcoffee' style={backgroundStyles}>
-            <h1>Our Coffee</h1>
+                <h1>Our Coffee</h1>
             </div>
             <div className="about-ourcoffee">
                 <div className="about-ourcoffee__img">
@@ -29,8 +41,8 @@ function OurCoffee({ coffeeBuy }) {
                 <About title={'About our beans'} text={aboutText} lines={true}/>
             </div>
             <hr />
-            <Filter/>
-            <Buy products={coffeeBuy}/>
+            <Filter onCountrySelect={handleCountrySelect}/>
+            <Buy products={filteredProducts} />
         </>
 
     );
