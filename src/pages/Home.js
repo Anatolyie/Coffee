@@ -2,7 +2,7 @@ import React from 'react';
 
 import Promo from '../components/Promo/Promo';
 import About from '../components/About/About';
-import Best from '../components/Best';
+import Best from '../components/Best/Best';
 
 function Home({ coffeeData }) {
     const aboutText = [
@@ -33,7 +33,7 @@ function Home({ coffeeData }) {
             <div className='promo' style={backgroundStyles}>
                 <Promo/>
             </div>
-            <About text={aboutText} title={'About Us'}/>
+            <About text={aboutText} title={'About Us'} lines={false}/>
             <Best products={coffeeData} />
        </>
     );

@@ -1,5 +1,5 @@
-import { Route, Routes } from "react-router-dom";
-import { useEffect, useState } from "react";
+import { Route, Routes, useLocation } from "react-router-dom";
+import { useState, useEffect } from "react";
 
 import Header from "./components/Header/Header";
 import Home from "./pages/Home";
@@ -16,8 +16,16 @@ import "./styles/index.scss"
 
 
 function App() {
-  const [ourCoffee, setOurCoffee] = useState(data)
-  const [buyCoffee, setBuyCoffee] = useState(dataBuy)
+  const [ourCoffee, setOurCoffee] = useState(data);
+  const [buyCoffee, setBuyCoffee] = useState(dataBuy);
+
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
+
 
   return (
     <>

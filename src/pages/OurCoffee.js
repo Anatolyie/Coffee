@@ -26,7 +26,7 @@ function OurCoffee({ coffeeBuy }) {
                 <div className="about-ourcoffee__img">
                     <img src={`${require("../assets/img/coupe-coffee-min.png")}`} alt="coffee" />
                 </div>
-                <About title={'About our beans'} text={aboutText}/>
+                <About title={'About our beans'} text={aboutText} lines={true}/>
             </div>
             <hr />
             <Filter/>

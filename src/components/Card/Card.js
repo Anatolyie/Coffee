@@ -1,10 +1,13 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
+
 
 function Card({ img, text, price, country, styles, showExtraDiv }) {
+
     return (
         <div className='card' style={styles}>
             <div className="card-img">
-                <img src={img} alt="coffee" />
+                <img src={img} alt="coffee"/>
             </div>
             <div className="card-text">{text}</div>
             { showExtraDiv && 

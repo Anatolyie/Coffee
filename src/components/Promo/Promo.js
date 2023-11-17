@@ -1,5 +1,5 @@
 import React from 'react';
-
+import { Link } from 'react-router-dom';
 
 function Promo() {
     return (
@@ -21,9 +21,9 @@ function Promo() {
                 <p className='promo-subtitle'>
                     We makes every day full of energy and taste Want to try our beans?
                 </p>
-                <a href="#" className='promo-link'>
+                <Link to="/pleasure" className='promo-link'>
                     More
-                </a>
+                </Link>
             </div>
         </>
     );
