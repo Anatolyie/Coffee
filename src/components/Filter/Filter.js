@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
 function Filter({ onCountrySelect, onSearchTextChange }) {
-    const [country, SetCountry] = useState(['Brazil', 'Kenya', 'Columbia']);
+    const [country] = useState(['Brazil', 'Kenya', 'Columbia']);
     const [searchText, setSearchText] = useState('');
 
     const handleCountryClick = (selectedCountry) => {
@@ -16,9 +16,6 @@ function Filter({ onCountrySelect, onSearchTextChange }) {
         onSearchTextChange(text);
     };
 
-    const filteredCountries = country.filter((item) =>
-        item.toLowerCase().includes(searchText.toLowerCase())
-    );
     return (
         <div className='filter'> 
             <label className='filter-input'>
