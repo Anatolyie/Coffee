@@ -1,9 +1,12 @@
 .promo {
     width: 100%;
     min-height: 50vh;
-    // background: url('../assets/img/Main-bg.jpg') center center / cover no-repeat;
-    transform: translateY(-28%);
+    transform: translateY(-31%);
     padding-bottom: 30px;
+
+    @media screen and (max-width: 576px){
+        transform: translateY(-33%);
+    }
     &-svg {
         position: relative;
         &:before, &:after {
@@ -15,10 +18,32 @@
             position: absolute;
             left: 43%;
             top: 15px;
+            @media screen and (max-width: 900px){
+                left: 38%;
+            }
+
+            @media screen and (max-width: 576px){
+                left: 35%;
+            }
+
+            @media screen and (max-width: 420px){
+                left: 29%;
+            }
         }
         &:after {
             left: unset;
             right: 43%;
+            @media screen and (max-width: 900px){
+               right: 38%;
+            }
+
+            @media screen and (max-width: 576px){
+                right: 35%;
+            }
+
+            @media screen and (max-width: 420px){
+                right: 29%;
+            }
         }
     }
     svg {
@@ -39,6 +64,17 @@
         margin-top: 30px;
         max-width: 530px;
         line-height: 44px;
+        @media screen and (max-width: 900px){
+            font-size: 20px;
+            margin-top: 20px;
+            line-height: 35px;
+        }
+
+        @media screen and (max-width: 576px){
+            font-size: 17px;
+            margin-top: 11px;
+            line-height: 26px;
+        }
     }
     .promo-link {
         display: block;
@@ -53,6 +89,9 @@
     }
     &-ourcoffee {
         min-height: 35vh;
-        transform: translateY(-49%);
+        transform: translateY(-56%);
+        @media screen and (max-width: 900px){
+            transform: translateY(-71%);
+        }
     }
 }

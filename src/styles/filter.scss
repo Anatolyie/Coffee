@@ -4,6 +4,11 @@
     column-gap: 50px;
     margin-bottom: 70px;
     align-items: center;
+    @media screen and (max-width: 720px){
+        row-gap: 30px;
+        flex-direction: column;
+        margin-bottom: 35px;
+     }
     &-input {
         input {
             width: 180px;

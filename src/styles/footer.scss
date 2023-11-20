@@ -6,6 +6,10 @@
     align-items: center;
     column-gap: 35px;
     position: relative;
+
+    @media screen and (max-width: 420px){
+       column-gap: 20px;
+    }
     &-svg {
         fill: black;
         &__absolute {
@@ -27,9 +31,31 @@
         position: absolute;
         left: 45%;
         top: 60px;
+        @media screen and (max-width: 900px){
+            left: 38%;
+        }
+
+        @media screen and (max-width: 576px){
+            left: 35%;
+        }
+
+        @media screen and (max-width: 420px){
+            left: 29%;
+        }
     }
     &:after {
         left: unset;
         right: 45%;
+        @media screen and (max-width: 900px){
+            right: 38%;
+        }
+
+        @media screen and (max-width: 576px){
+            right: 35%;
+        }
+
+        @media screen and (max-width: 420px){
+            right: 29%;
+        }
     }
 }

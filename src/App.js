@@ -26,6 +26,7 @@ function App() {
 
   return (
     <>
+      <div className="container">
       <Header/>
       <Routes>
         <Route path="/" element={<Home coffeeData={ourCoffee}/>}/>
@@ -34,6 +35,7 @@ function App() {
         <Route path="*" element={<Error/>}/>
       </Routes>
       <Footer/>
+      </div>
     </>
   );
 }
